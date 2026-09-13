@@ -120,25 +120,160 @@ interface thì viết hoa chữ cái đầu và từ đó nên là (adj )
 
 
 
+**class**
 
+là thứ tạo ra  các object
+
+*1 class bao gồm*
+
+varialbe
+
+methods
+
+contructor
+
+interdace
+
+...
+
+**object**
+
+là 1 thục thể được miêu tả
 
 **method**
 
+khối lệnh tái sử dụng
+
 có 2 loại chính
 
-&#x20;khong trả về kết quả thì dung ( void)
+Predefined Method
 
-còn lại là trarveef kết quả
-
-
+User-defined Method
 
 
 
-**contructor** : dung đểgọi tự động khi tạo ra 1 đối tượng
+
+
+**contructor**
+
+dung đểgọi tự động khi tạo ra 1 đối tượng
 
 có  2 loại
 
 1 là khong có tham số
 
 2 là có tham số
+
+note : khong void kkhong int , ...
+
+không static , final ,  abstract
+
+
+
+
+
+
+
+**inheritances**
+
+\-giúp subclass/childclass kế thừa  thuộc tính , method của parentclass/ superclass
+
+\-có lợi ích
+1 method overriding
+
+2 code reusability
+
+
+
+\-có 4 type of inheritance
+
+1 single inheritance : a subclass inherts a superclass only ( 1 -1)
+
+2 multilevel inheritance : a class is dderived from a subclass, form a chain of inheritance
+
+3 hierarchical ingeritance : multilevel class inherts the same superclass
+
+4 hybrid inheritance: combones 2 or more inheritance thought interface ( no class) (note: multiple inheritance use interface ) not  extend class
+
+
+
+**..aggration**
+
+\-1 class có thể là entity của 1 class other   ( ví dụ tập a là tập con của c )
+
+
+
+
+
+
+
+**polymorphism**
+
+
+
+**method overloading**
+
+\-method có cùng tên nhưng có các parameters khác nhau ( nhiều hơn hoặc có thể khác kiểu dữ lieu ( trong cùng 1 method được defined ) ) được khai báo chung trong cùng 1 class
+
+\-trong 1 method overloading khi khai báo type data , nếu 2 type data khác nhau thì khi return sẽ đuộc up type data ( typepromotion ) với điều kiện là không được ep kiểu trả về  -> nếu ép kiểu trả về thì sẽ bị lỗi
+
+\-2 method overloading going nhau (name và có cùng số lượng tham số ( parameter) ) mà 2 type data được khai báo trong 2 method này so  le đối nhau kiểu type data thì sẽ gây lỗi . *example*  sum (int a , long b )  vs sum (long a, int b )
+
+\-đặc biệt: về mặt rule thì đc khai báo mehthodoverload với namemethod là main nhưng nếu chỉ chạy thì chỉ có ( public static void Main (String\[] args )  được run
+
+
+
+**method overriding**
+
+\-method này được viết lại ở childClass going hệt với method của superclass (nameClass, parameter, datatype , return datatype)
+
+note : khi superclass  khai báo pritve/final/static  thì childClass khống thể use methodoverriding
+
+
+
+**covariant return type**
+
+\-chp pheps method ở subclass  overriding được return 1subclass của kểu trả  về ở superclass
+
+
+
+**supper**
+
+\-use acess member ( variable, method , contructor) of superclass 1 cách trực tiếp
+
+\-note:
+
+1 lệnh " super()" khi  gọi constructor của superclass phải là lệnh đầu tiên trog childclass( constructor)
+
+2 còn nếu khong viết ở phần constructor của childclass thì compilersự tự dộng chèn vào
+
+3 super khong có hiểu quả dvs static
+
+
+
+**instance initializer**
+
+\-laf block code run auto khi tạo object, chỉ sau super() và trước constructor
+
+
+
+**final**
+
+\-final la khong dược thay đổi member( variable, method, class, parameter) và finale constructor khong tồn tại 
+
+
+
+**polymorphism** 
+
+\-1 action or method có thể thực hiện nhiều cách khác nhau 
+
+\-2 type polymorphism:
+
+1compile-time dung method overloading : quyết định method nào đc call
+
+2 runtime dung method overriding
+
+**upcating**: dung biến tham chiếu của class trỏ dến object của class con (example: Animal a = new Dog()) 
+
+
 
