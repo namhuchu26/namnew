@@ -6,21 +6,21 @@ class Person {
 	};
 };
 
-class Students extends Person {
+class Student extends Person {
 	void callInformation() {
 		System.out.println("they are student. they are under 21 years old ");
 	};
 
 };
 
-class Teachers extends Person {
+class Teacher extends Person {
 	void callInformation() {
 		System.out.println("they are Teacher. ");
 	};
 
 }
 
-class Subject extends Students {
+class GraduateStudent extends Student {
 	void nameSubject() {
 		System.out.println("java core");
 	}
@@ -28,11 +28,11 @@ class Subject extends Students {
 
 public class HybirdInheritance {
 	public static void main(String[] args) {
-		Subject st1 = new Subject();
+		GraduateStudent st1 = new GraduateStudent();
 		st1.call();
 		st1.callInformation();
 		st1.nameSubject();
-		Teachers teacher1 = new Teachers();
+		Teacher teacher1 = new Teacher();
 		teacher1.call();
 		teacher1.callInformation();
 	}

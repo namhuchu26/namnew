@@ -1,6 +1,6 @@
 package chapter3;
 
-public class classAndObject_Students {
+public class ClassAndObject_Students {
 	// khai báo
 	int studentId;
 	String name;

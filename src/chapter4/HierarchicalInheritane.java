@@ -1,19 +1,19 @@
 package chapter4;
 
-class Animals {
+class Animal{
 	void eats() {
 		System.out.println("eating ");
 	}
 
 };
 
-class Dog extends Animals {
+class Dog extends Animal {
 	void bark() {
 		System.out.println("barking");
 	}
 }
 
-class Cat extends Animals {
+class Cat extends Animal {
 	void meow() {
 		System.out.println("meowing");
 	}

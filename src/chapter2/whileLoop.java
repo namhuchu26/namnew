@@ -1,6 +1,6 @@
 package chapter2;
 
-public class whileLoop {
+public class WhileLoop {
 	public static void main(String[] args) {
 		int i = 1;
 		while (i <= 5) {

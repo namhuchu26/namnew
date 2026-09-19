@@ -1,12 +1,12 @@
 package chapter4;
 
-class Peoples {
+class Person {
 	void call() {
 		System.out.println("information ");
 	};
 };
 
-class Students extends Peoples {
+class Student extends Person {
 	void callInformation() {
 		System.out.println("they are student. they are under 21 years old ");
 	};
@@ -15,7 +15,7 @@ class Students extends Peoples {
 
 public class SingleClass {
 	public static void main(String[] args) {
-		Students st1 = new Students();
+		Student st1 = new Student();
 		st1.call();
 		st1.callInformation();
 	}

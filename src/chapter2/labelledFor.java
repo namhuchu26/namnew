@@ -1,6 +1,6 @@
 package chapter2;
 
-public class labelledFor {
+public class LabelledFor {
 	public static void main(String[] args) {
 		aa: for (int i = 1; i <= 3; i++) {
 			for (int j = 1; j <= 3; j++) {

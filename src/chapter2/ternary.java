@@ -1,6 +1,6 @@
 package chapter2;
 
-public class ternary {
+public class Ternary {
 	public static void main(String[] args) {
 		int a = 10;
 		int b = 20;

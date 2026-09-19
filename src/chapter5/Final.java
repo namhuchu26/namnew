@@ -8,7 +8,7 @@ class Student {
 	// static final = hằng số chung
 	static final String SCHOOL = "PTIT";
 
-	// Gán final variable trong constructor
+	// final variable trong constructor
 	Student(int id) {
 		ID = id;
 	}

@@ -2,7 +2,7 @@ package chapter2;
 
 import java.util.Scanner;
 
-public class ifElseStatment {
+public class IfElseStatment {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
